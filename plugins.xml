@@ -6142,6 +6142,17 @@
 			<certification type="official"/>
 			<description>Fix enable/disable behaviour</description>
 		</release>
+		<release date="2023-10-31" version="1.1.4.3" md5="1c8fa864fa54f15ae2cbf160ca2ded28">
+			<package>https://github.com/pkp/orcidProfile/releases/download/v1_3_4-8/orcidProfile-v1_3_4-8.tar.gz</package>
+			<compatibility application="ojs2">
+				<version>~3.4.0.0</version>
+			</compatibility>
+			<compatibility application="ops">
+				<version>~3.4.0.0</version>
+			</compatibility>
+			<certification type="official"/>
+			<description>Bugfix: consider old API URL in plugin settings</description>
+		</release>
 
 	</plugin>
 
