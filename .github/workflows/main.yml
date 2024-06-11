@@ -63,3 +63,6 @@ jobs:
           cd ~/${{github.event.pull_request.head.repo.name || github.event.repository.name  }}
           GITHUB_TOKEN=${{secrets.GITHUB_TOKEN}} pkp-plugin generate-site ./plugins.xml
         shell: bash
+    - name: Setup tmate session by failure
+      if: ${{ failure() }}
+      uses: mxschmitt/action-tmate@v3
